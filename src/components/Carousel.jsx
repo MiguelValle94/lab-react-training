@@ -42,7 +42,7 @@ export default class Carousel extends React.Component {
         return (
             <div>
                 <button className="Carousel" onClick={() => this.moveLeft()}> left </button> 
-                <img src={this.state.picture}/>
+                <img src={this.state.picture} alt=""/>
                 <button className="Carousel"onClick={() => this.moveRight()}> right </button> 
             </div>
         );

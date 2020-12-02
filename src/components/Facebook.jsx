@@ -5,7 +5,7 @@ import './Facebook.css';
 function Facebook(props) {
     const [choosenCountry, setChoosenCountry] = useState('');
     const allCountries = props.profiles.map(prof => prof.country)
-    const countries = [... new Set(allCountries)]
+    const countries = [...new Set(allCountries)]
     const paintCountry = (country) => setChoosenCountry(country)
 
     const buttons = countries.map(country => { 
