@@ -1,7 +1,8 @@
-import React from 'react';
-import './IdCard.css';
+import React from 'react'
+import './IdCard.css'
 
 function IdCard(props) {
+    
     return (
         <div className="IdCard">
             <img src={props.picture} alt="avatar"></img>
@@ -16,4 +17,4 @@ function IdCard(props) {
     );
 }
 
-export default IdCard;
+export default IdCard
