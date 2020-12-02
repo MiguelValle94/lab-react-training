@@ -1,5 +1,5 @@
-import React from 'react';
-import './DriverCard.css';
+import React from 'react'
+import './DriverCard.css'
 
 function DriverCard(props) {
     const rate = Math.round(props.rating);
@@ -22,8 +22,8 @@ function DriverCard(props) {
                 <p>{props.car.model} - {props.car.licensePlate}</p>
             </div>
         </div>
-    );
+    )
 }
 
 
-export default DriverCard;
+export default DriverCard
