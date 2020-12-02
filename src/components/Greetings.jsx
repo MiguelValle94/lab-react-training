@@ -1,5 +1,5 @@
-import React from 'react';
-import './Greetings.css';
+import React from 'react'
+import './Greetings.css'
 
 
 function Greetings(props) {
@@ -10,11 +10,12 @@ function Greetings(props) {
         it: 'Ciao',
         en: 'Hello'
     }
+
     return (
         <div className="Greetings">
             <p>{langs[props.lang]}  {props.children}</p>
         </div>
-    );
+    )
 }
 
-export default Greetings;
+export default Greetings
