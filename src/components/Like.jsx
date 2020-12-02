@@ -1,5 +1,5 @@
-import React from 'react';
-import './Like.css';
+import React from 'react'
+import './Like.css'
 
 export default class Like extends React.Component {
     constructor() {
@@ -17,12 +17,12 @@ export default class Like extends React.Component {
         this.setState({
             likes: this.state.likes + 1,
             color: this.colors[randomNum]
-        });
+        })
     }
 
     render() {
         return (
             <button className="buttonLike" style={{backgroundColor: `${this.state.color}`}} onClick={() => this.clickLike()}>{this.state.likes} Likes</button>
-        );
+        )
     }
 }
