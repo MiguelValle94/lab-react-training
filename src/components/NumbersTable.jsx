@@ -1,5 +1,5 @@
-import React from 'react';
-import './NumbersTable.css';
+import React from 'react'
+import './NumbersTable.css'
 
 export default class NumbersTable extends React.Component {
     constructor(props) {
@@ -10,7 +10,6 @@ export default class NumbersTable extends React.Component {
         }
     }
 
- 
     render() {
         const labels = []
         for (var a = 1; this.number >= a; a++)
@@ -21,7 +20,6 @@ export default class NumbersTable extends React.Component {
             <div>
                 <ul>{labels}</ul>
             </div>
-        );
-
+        )
     }
 }

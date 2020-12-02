@@ -1,5 +1,5 @@
-import React from 'react';
-import './Dice.css';
+import React from 'react'
+import './Dice.css'
 
 export default class Dice extends React.Component {
     constructor() {
@@ -15,16 +15,16 @@ export default class Dice extends React.Component {
         setTimeout(() => {
             this.setState({
                 pic: this.imgs[randomNum]
-            });
-        }, 1000);
+            })
+        }, 1000)
         this.setState({
             pic: this.imgs[6]
-        });
+        })
     }
 
     render() {
         return (
             <button className="diceImg" onClick={() => this.getRandomPic()}><img src={this.state.pic} alt="dice"></img></button>
-        );
+        )
     }
 }

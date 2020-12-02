@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './Facebook.css'
 
-
 function Facebook(props) {
     const [choosenCountry, setChoosenCountry] = useState('')
     const allCountries = props.profiles.map(prof => prof.country)
